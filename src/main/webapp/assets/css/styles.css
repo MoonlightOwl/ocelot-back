@@ -1,0 +1,18 @@
+body {
+  background-image: url("../images/skulls.png");
+  background-repeat: repeat;
+}
+
+.splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.splash p {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 42pt;
+  color: #444;
+}
