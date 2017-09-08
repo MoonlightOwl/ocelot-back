@@ -25,4 +25,4 @@ $ cd ocelot-back
 $ sbt sbt universal:packageZipTarball
 ```
 
-All necessary to run Ocelot server will be zipped to `./target/universal/ocelot-x.x.x.tgx`
+All files necessary to run Ocelot server will be zipped to `./target/universal/ocelot-x.x.x.tgz`
