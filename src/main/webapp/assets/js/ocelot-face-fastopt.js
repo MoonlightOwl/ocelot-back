@@ -1131,40 +1131,8 @@ var $d_O = new $TypeData().initClass({
 }, (void 0), (void 0), $is_O, $isArrayOf_O);
 $c_O.prototype.$classData = $d_O;
 /** @constructor */
-function $c_Lorg_scalajs_jquery_package$() {
-  $c_O.call(this);
-  this.jQuery$1 = null
-}
-$c_Lorg_scalajs_jquery_package$.prototype = new $h_O();
-$c_Lorg_scalajs_jquery_package$.prototype.constructor = $c_Lorg_scalajs_jquery_package$;
-/** @constructor */
-function $h_Lorg_scalajs_jquery_package$() {
-  /*<skip>*/
-}
-$h_Lorg_scalajs_jquery_package$.prototype = $c_Lorg_scalajs_jquery_package$.prototype;
-$c_Lorg_scalajs_jquery_package$.prototype.init___ = (function() {
-  $n_Lorg_scalajs_jquery_package$ = this;
-  this.jQuery$1 = $g.jQuery;
-  return this
-});
-var $d_Lorg_scalajs_jquery_package$ = new $TypeData().initClass({
-  Lorg_scalajs_jquery_package$: 0
-}, false, "org.scalajs.jquery.package$", {
-  Lorg_scalajs_jquery_package$: 1,
-  O: 1
-});
-$c_Lorg_scalajs_jquery_package$.prototype.$classData = $d_Lorg_scalajs_jquery_package$;
-var $n_Lorg_scalajs_jquery_package$ = (void 0);
-function $m_Lorg_scalajs_jquery_package$() {
-  if ((!$n_Lorg_scalajs_jquery_package$)) {
-    $n_Lorg_scalajs_jquery_package$ = new $c_Lorg_scalajs_jquery_package$().init___()
-  };
-  return $n_Lorg_scalajs_jquery_package$
-}
-/** @constructor */
 function $c_Ltotoro_ocelot_Ocelot$() {
-  $c_O.call(this);
-  this.meows$1 = null
+  $c_O.call(this)
 }
 $c_Ltotoro_ocelot_Ocelot$.prototype = new $h_O();
 $c_Ltotoro_ocelot_Ocelot$.prototype.constructor = $c_Ltotoro_ocelot_Ocelot$;
@@ -1174,43 +1142,12 @@ function $h_Ltotoro_ocelot_Ocelot$() {
 }
 $h_Ltotoro_ocelot_Ocelot$.prototype = $c_Ltotoro_ocelot_Ocelot$.prototype;
 $c_Ltotoro_ocelot_Ocelot$.prototype.init___ = (function() {
-  $n_Ltotoro_ocelot_Ocelot$ = this;
-  var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array(["meow", "meooow", ":3", "=(O.O)="]);
-  var len = $uI(xs.array$6.length);
-  var array = $newArrayObject($d_T.getArrayOf(), [len]);
-  var elem$1 = 0;
-  elem$1 = 0;
-  var this$4 = new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(xs, 0, $uI(xs.array$6.length));
-  while (this$4.hasNext__Z()) {
-    var arg1 = this$4.next__O();
-    array.set(elem$1, arg1);
-    elem$1 = ((1 + elem$1) | 0)
-  };
-  this.meows$1 = array;
   return this
 });
-$c_Ltotoro_ocelot_Ocelot$.prototype.meow__D__V = (function(duration) {
-  $m_sjs_js_timers_package$().setTimeout__D__F0__sjs_js_timers_SetTimeoutHandle(duration, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-    return (function() {
-      var jsx$2 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)(".splash p");
-      var jsx$1 = $m_Ltotoro_ocelot_Ocelot$().meows$1;
-      var this$1 = $m_s_util_Random$();
-      var n = $m_Ltotoro_ocelot_Ocelot$().meows$1.u.length;
-      jsx$2.text(jsx$1.get(this$1.self$1.nextInt__I__I(n)));
-      $m_sjs_js_timers_package$().setTimeout__D__F0__sjs_js_timers_SetTimeoutHandle(1000.0, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
-        return (function() {
-          (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)(".splash p").text("{ Ocelot.Online }")
-        })
-      })($this)));
-      var jsx$3 = $m_Ltotoro_ocelot_Ocelot$();
-      var this$2 = $m_s_util_Random$();
-      jsx$3.meow__D__V(this$2.self$1.nextInt__I__I(20000))
-    })
-  })(this)))
-});
 $c_Ltotoro_ocelot_Ocelot$.prototype.main__AT__V = (function(args) {
-  var this$1 = $m_s_util_Random$();
-  this.meow__D__V(this$1.self$1.nextInt__I__I(20000))
+  var this$2 = $m_s_Console$();
+  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Come meow with us!\n")
 });
 var $d_Ltotoro_ocelot_Ocelot$ = new $TypeData().initClass({
   Ltotoro_ocelot_Ocelot$: 0
@@ -1261,6 +1198,116 @@ var $d_jl_Class = new $TypeData().initClass({
   O: 1
 });
 $c_jl_Class.prototype.$classData = $d_jl_Class;
+/** @constructor */
+function $c_jl_System$() {
+  $c_O.call(this);
+  this.out$1 = null;
+  this.err$1 = null;
+  this.in$1 = null;
+  this.getHighPrecisionTime$1 = null
+}
+$c_jl_System$.prototype = new $h_O();
+$c_jl_System$.prototype.constructor = $c_jl_System$;
+/** @constructor */
+function $h_jl_System$() {
+  /*<skip>*/
+}
+$h_jl_System$.prototype = $c_jl_System$.prototype;
+$c_jl_System$.prototype.init___ = (function() {
+  $n_jl_System$ = this;
+  this.out$1 = new $c_jl_JSConsoleBasedPrintStream().init___jl_Boolean(false);
+  this.err$1 = new $c_jl_JSConsoleBasedPrintStream().init___jl_Boolean(true);
+  this.in$1 = null;
+  var x = $g.performance;
+  if ($uZ((!(!x)))) {
+    var x$1 = $g.performance.now;
+    if ($uZ((!(!x$1)))) {
+      var jsx$1 = (function() {
+        return $m_jl_System$().java$lang$System$$$anonfun$getHighPrecisionTime$1__D()
+      })
+    } else {
+      var x$2 = $g.performance.webkitNow;
+      if ($uZ((!(!x$2)))) {
+        var jsx$1 = (function() {
+          return $m_jl_System$().java$lang$System$$$anonfun$getHighPrecisionTime$2__D()
+        })
+      } else {
+        var jsx$1 = (function() {
+          return $m_jl_System$().java$lang$System$$$anonfun$getHighPrecisionTime$3__D()
+        })
+      }
+    }
+  } else {
+    var jsx$1 = (function() {
+      return $m_jl_System$().java$lang$System$$$anonfun$getHighPrecisionTime$4__D()
+    })
+  };
+  this.getHighPrecisionTime$1 = jsx$1;
+  return this
+});
+$c_jl_System$.prototype.java$lang$System$$$anonfun$getHighPrecisionTime$3__D = (function() {
+  return $uD(new $g.Date().getTime())
+});
+$c_jl_System$.prototype.java$lang$System$$$anonfun$getHighPrecisionTime$1__D = (function() {
+  return $uD($g.performance.now())
+});
+$c_jl_System$.prototype.java$lang$System$$$anonfun$getHighPrecisionTime$4__D = (function() {
+  return $uD(new $g.Date().getTime())
+});
+$c_jl_System$.prototype.java$lang$System$$$anonfun$getHighPrecisionTime$2__D = (function() {
+  return $uD($g.performance.webkitNow())
+});
+var $d_jl_System$ = new $TypeData().initClass({
+  jl_System$: 0
+}, false, "java.lang.System$", {
+  jl_System$: 1,
+  O: 1
+});
+$c_jl_System$.prototype.$classData = $d_jl_System$;
+var $n_jl_System$ = (void 0);
+function $m_jl_System$() {
+  if ((!$n_jl_System$)) {
+    $n_jl_System$ = new $c_jl_System$().init___()
+  };
+  return $n_jl_System$
+}
+/** @constructor */
+function $c_s_DeprecatedConsole() {
+  $c_O.call(this)
+}
+$c_s_DeprecatedConsole.prototype = new $h_O();
+$c_s_DeprecatedConsole.prototype.constructor = $c_s_DeprecatedConsole;
+/** @constructor */
+function $h_s_DeprecatedConsole() {
+  /*<skip>*/
+}
+$h_s_DeprecatedConsole.prototype = $c_s_DeprecatedConsole.prototype;
+/** @constructor */
+function $c_s_util_DynamicVariable() {
+  $c_O.call(this);
+  this.v$1 = null
+}
+$c_s_util_DynamicVariable.prototype = new $h_O();
+$c_s_util_DynamicVariable.prototype.constructor = $c_s_util_DynamicVariable;
+/** @constructor */
+function $h_s_util_DynamicVariable() {
+  /*<skip>*/
+}
+$h_s_util_DynamicVariable.prototype = $c_s_util_DynamicVariable.prototype;
+$c_s_util_DynamicVariable.prototype.toString__T = (function() {
+  return (("DynamicVariable(" + this.v$1) + ")")
+});
+$c_s_util_DynamicVariable.prototype.init___O = (function(init) {
+  this.v$1 = init;
+  return this
+});
+var $d_s_util_DynamicVariable = new $TypeData().initClass({
+  s_util_DynamicVariable: 0
+}, false, "scala.util.DynamicVariable", {
+  s_util_DynamicVariable: 1,
+  O: 1
+});
+$c_s_util_DynamicVariable.prototype.$classData = $d_s_util_DynamicVariable;
 /** @constructor */
 function $c_s_util_hashing_MurmurHash3() {
   $c_O.call(this)
@@ -1313,112 +1360,6 @@ $c_s_util_hashing_MurmurHash3.prototype.productHash__s_Product__I__I = (function
 $c_s_util_hashing_MurmurHash3.prototype.finalizeHash__I__I__I = (function(hash, length) {
   return this.avalanche__p1__I__I((hash ^ length))
 });
-$c_s_util_hashing_MurmurHash3.prototype.orderedHash__sc_TraversableOnce__I__I = (function(xs, seed) {
-  var n = new $c_sr_IntRef().init___I(0);
-  var h = new $c_sr_IntRef().init___I(seed);
-  xs.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, n$1, h$1) {
-    return (function(x$2) {
-      h$1.elem$1 = $this.mix__I__I__I(h$1.elem$1, $m_sr_Statics$().anyHash__O__I(x$2));
-      n$1.elem$1 = ((1 + n$1.elem$1) | 0)
-    })
-  })(this, n, h)));
-  return this.finalizeHash__I__I__I(h.elem$1, n.elem$1)
-});
-$c_s_util_hashing_MurmurHash3.prototype.listHash__sci_List__I__I = (function(xs, seed) {
-  var n = 0;
-  var h = seed;
-  return this.finalizeHash__I__I__I(h, n)
-});
-/** @constructor */
-function $c_sc_Iterator$() {
-  $c_O.call(this);
-  this.empty$1 = null
-}
-$c_sc_Iterator$.prototype = new $h_O();
-$c_sc_Iterator$.prototype.constructor = $c_sc_Iterator$;
-/** @constructor */
-function $h_sc_Iterator$() {
-  /*<skip>*/
-}
-$h_sc_Iterator$.prototype = $c_sc_Iterator$.prototype;
-$c_sc_Iterator$.prototype.init___ = (function() {
-  $n_sc_Iterator$ = this;
-  this.empty$1 = new $c_sc_Iterator$$anon$2().init___();
-  return this
-});
-var $d_sc_Iterator$ = new $TypeData().initClass({
-  sc_Iterator$: 0
-}, false, "scala.collection.Iterator$", {
-  sc_Iterator$: 1,
-  O: 1
-});
-$c_sc_Iterator$.prototype.$classData = $d_sc_Iterator$;
-var $n_sc_Iterator$ = (void 0);
-function $m_sc_Iterator$() {
-  if ((!$n_sc_Iterator$)) {
-    $n_sc_Iterator$ = new $c_sc_Iterator$().init___()
-  };
-  return $n_sc_Iterator$
-}
-function $f_sc_TraversableOnce__mkString__T__T__T__T($thiz, start, sep, end) {
-  var b = new $c_scm_StringBuilder().init___();
-  var this$1 = $f_sc_TraversableOnce__addString__scm_StringBuilder__T__T__T__scm_StringBuilder($thiz, b, start, sep, end);
-  var this$2 = this$1.underlying$5;
-  return this$2.content$1
-}
-function $f_sc_TraversableOnce__addString__scm_StringBuilder__T__T__T__scm_StringBuilder($thiz, b, start, sep, end) {
-  var first = new $c_sr_BooleanRef().init___Z(true);
-  b.append__T__scm_StringBuilder(start);
-  $thiz.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, b$1, sep$1, first$1) {
-    return (function(x$2) {
-      if (first$1.elem$1) {
-        b$1.append__O__scm_StringBuilder(x$2);
-        first$1.elem$1 = false;
-        return (void 0)
-      } else {
-        b$1.append__T__scm_StringBuilder(sep$1);
-        return b$1.append__O__scm_StringBuilder(x$2)
-      }
-    })
-  })($thiz, b, sep, first)));
-  b.append__T__scm_StringBuilder(end);
-  return b
-}
-/** @constructor */
-function $c_sjs_js_timers_package$() {
-  $c_O.call(this)
-}
-$c_sjs_js_timers_package$.prototype = new $h_O();
-$c_sjs_js_timers_package$.prototype.constructor = $c_sjs_js_timers_package$;
-/** @constructor */
-function $h_sjs_js_timers_package$() {
-  /*<skip>*/
-}
-$h_sjs_js_timers_package$.prototype = $c_sjs_js_timers_package$.prototype;
-$c_sjs_js_timers_package$.prototype.init___ = (function() {
-  return this
-});
-$c_sjs_js_timers_package$.prototype.setTimeout__D__F0__sjs_js_timers_SetTimeoutHandle = (function(interval, body) {
-  return $g.setTimeout((function(body$1) {
-    return (function() {
-      body$1.apply__O()
-    })
-  })(body), interval)
-});
-var $d_sjs_js_timers_package$ = new $TypeData().initClass({
-  sjs_js_timers_package$: 0
-}, false, "scala.scalajs.js.timers.package$", {
-  sjs_js_timers_package$: 1,
-  O: 1
-});
-$c_sjs_js_timers_package$.prototype.$classData = $d_sjs_js_timers_package$;
-var $n_sjs_js_timers_package$ = (void 0);
-function $m_sjs_js_timers_package$() {
-  if ((!$n_sjs_js_timers_package$)) {
-    $n_sjs_js_timers_package$ = new $c_sjs_js_timers_package$().init___()
-  };
-  return $n_sjs_js_timers_package$
-}
 /** @constructor */
 function $c_sjsr_Bits$() {
   $c_O.call(this);
@@ -1577,9 +1518,6 @@ function $h_sjsr_RuntimeString$() {
 $h_sjsr_RuntimeString$.prototype = $c_sjsr_RuntimeString$.prototype;
 $c_sjsr_RuntimeString$.prototype.init___ = (function() {
   return this
-});
-$c_sjsr_RuntimeString$.prototype.valueOf__O__T = (function(value) {
-  return ((value === null) ? "null" : $objectToString(value))
 });
 $c_sjsr_RuntimeString$.prototype.hashCode__T__I = (function(thiz) {
   var res = 0;
@@ -1792,78 +1730,6 @@ function $asArrayOf_jl_Throwable(obj, depth) {
   return (($isArrayOf_jl_Throwable(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Throwable;", depth))
 }
 /** @constructor */
-function $c_ju_Random() {
-  $c_O.call(this);
-  this.seedHi$1 = 0;
-  this.seedLo$1 = 0;
-  this.nextNextGaussian$1 = 0.0;
-  this.haveNextNextGaussian$1 = false
-}
-$c_ju_Random.prototype = new $h_O();
-$c_ju_Random.prototype.constructor = $c_ju_Random;
-/** @constructor */
-function $h_ju_Random() {
-  /*<skip>*/
-}
-$h_ju_Random.prototype = $c_ju_Random.prototype;
-$c_ju_Random.prototype.init___ = (function() {
-  $c_ju_Random.prototype.init___J.call(this, $m_ju_Random$().java$util$Random$$randomSeed__J());
-  return this
-});
-$c_ju_Random.prototype.init___J = (function(seed_in) {
-  this.haveNextNextGaussian$1 = false;
-  this.setSeed__J__V(seed_in);
-  return this
-});
-$c_ju_Random.prototype.nextInt__I__I = (function(n) {
-  if ((n <= 0)) {
-    throw new $c_jl_IllegalArgumentException().init___T("n must be positive")
-  } else {
-    return (((n & ((-n) | 0)) === n) ? (this.next__I__I(31) >> $clz32(n)) : this.loop$1__p1__I__I(n))
-  }
-});
-$c_ju_Random.prototype.next__I__I = (function(bits) {
-  var oldSeedHi = this.seedHi$1;
-  var oldSeedLo = this.seedLo$1;
-  var loProd = (11 + (15525485 * oldSeedLo));
-  var hiProd = ((1502 * oldSeedLo) + (15525485 * oldSeedHi));
-  var x = (loProd / 16777216);
-  var newSeedHi = (16777215 & (($uI((x | 0)) + (16777215 & $uI((hiProd | 0)))) | 0));
-  var newSeedLo = (16777215 & $uI((loProd | 0)));
-  this.seedHi$1 = newSeedHi;
-  this.seedLo$1 = newSeedLo;
-  var result32 = ((newSeedHi << 8) | (newSeedLo >> 16));
-  return ((result32 >>> ((32 - bits) | 0)) | 0)
-});
-$c_ju_Random.prototype.loop$1__p1__I__I = (function(n$1) {
-  _loop: while (true) {
-    var bits = this.next__I__I(31);
-    var value = ((bits % n$1) | 0);
-    if ((((((bits - value) | 0) + (((-1) + n$1) | 0)) | 0) < 0)) {
-      continue _loop
-    } else {
-      return value
-    }
-  }
-});
-$c_ju_Random.prototype.setSeed__J__V = (function(seed_in) {
-  var lo = ((-554899859) ^ seed_in.lo$2);
-  var hi = (5 ^ seed_in.hi$2);
-  var hi$1 = (65535 & hi);
-  var lo$1 = (((lo >>> 24) | 0) | (hi$1 << 8));
-  this.seedHi$1 = lo$1;
-  this.seedLo$1 = (16777215 & lo);
-  this.haveNextNextGaussian$1 = false
-});
-var $d_ju_Random = new $TypeData().initClass({
-  ju_Random: 0
-}, false, "java.util.Random", {
-  ju_Random: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_Random.prototype.$classData = $d_ju_Random;
-/** @constructor */
 function $c_s_util_hashing_MurmurHash3$() {
   $c_s_util_hashing_MurmurHash3.call(this);
   this.seqSeed$2 = 0;
@@ -1884,14 +1750,6 @@ $c_s_util_hashing_MurmurHash3$.prototype.init___ = (function() {
   this.setSeed$2 = $m_sjsr_RuntimeString$().hashCode__T__I("Set");
   return this
 });
-$c_s_util_hashing_MurmurHash3$.prototype.seqHash__sc_Seq__I = (function(xs) {
-  if ($is_sci_List(xs)) {
-    var x2 = $as_sci_List(xs);
-    return this.listHash__sci_List__I__I(x2, this.seqSeed$2)
-  } else {
-    return this.orderedHash__sc_TraversableOnce__I__I(xs, this.seqSeed$2)
-  }
-});
 var $d_s_util_hashing_MurmurHash3$ = new $TypeData().initClass({
   s_util_hashing_MurmurHash3$: 0
 }, false, "scala.util.hashing.MurmurHash3$", {
@@ -1907,70 +1765,6 @@ function $m_s_util_hashing_MurmurHash3$() {
   };
   return $n_s_util_hashing_MurmurHash3$
 }
-function $f_sc_Iterator__toString__T($thiz) {
-  return (($thiz.hasNext__Z() ? "non-empty" : "empty") + " iterator")
-}
-function $f_sc_Iterator__foreach__F1__V($thiz, f) {
-  while ($thiz.hasNext__Z()) {
-    f.apply__O__O($thiz.next__O())
-  }
-}
-/** @constructor */
-function $c_sr_AbstractFunction0() {
-  $c_O.call(this)
-}
-$c_sr_AbstractFunction0.prototype = new $h_O();
-$c_sr_AbstractFunction0.prototype.constructor = $c_sr_AbstractFunction0;
-/** @constructor */
-function $h_sr_AbstractFunction0() {
-  /*<skip>*/
-}
-$h_sr_AbstractFunction0.prototype = $c_sr_AbstractFunction0.prototype;
-$c_sr_AbstractFunction0.prototype.toString__T = (function() {
-  return "<function0>"
-});
-/** @constructor */
-function $c_sr_AbstractFunction1() {
-  $c_O.call(this)
-}
-$c_sr_AbstractFunction1.prototype = new $h_O();
-$c_sr_AbstractFunction1.prototype.constructor = $c_sr_AbstractFunction1;
-/** @constructor */
-function $h_sr_AbstractFunction1() {
-  /*<skip>*/
-}
-$h_sr_AbstractFunction1.prototype = $c_sr_AbstractFunction1.prototype;
-$c_sr_AbstractFunction1.prototype.toString__T = (function() {
-  return "<function1>"
-});
-/** @constructor */
-function $c_sr_BooleanRef() {
-  $c_O.call(this);
-  this.elem$1 = false
-}
-$c_sr_BooleanRef.prototype = new $h_O();
-$c_sr_BooleanRef.prototype.constructor = $c_sr_BooleanRef;
-/** @constructor */
-function $h_sr_BooleanRef() {
-  /*<skip>*/
-}
-$h_sr_BooleanRef.prototype = $c_sr_BooleanRef.prototype;
-$c_sr_BooleanRef.prototype.toString__T = (function() {
-  var value = this.elem$1;
-  return ("" + value)
-});
-$c_sr_BooleanRef.prototype.init___Z = (function(elem) {
-  this.elem$1 = elem;
-  return this
-});
-var $d_sr_BooleanRef = new $TypeData().initClass({
-  sr_BooleanRef: 0
-}, false, "scala.runtime.BooleanRef", {
-  sr_BooleanRef: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_sr_BooleanRef.prototype.$classData = $d_sr_BooleanRef;
 var $d_sr_BoxedUnit = new $TypeData().initClass({
   sr_BoxedUnit: 0
 }, false, "scala.runtime.BoxedUnit", {
@@ -1981,33 +1775,16 @@ var $d_sr_BoxedUnit = new $TypeData().initClass({
   return (x === (void 0))
 }));
 /** @constructor */
-function $c_sr_IntRef() {
-  $c_O.call(this);
-  this.elem$1 = 0
+function $c_Ljava_io_OutputStream() {
+  $c_O.call(this)
 }
-$c_sr_IntRef.prototype = new $h_O();
-$c_sr_IntRef.prototype.constructor = $c_sr_IntRef;
+$c_Ljava_io_OutputStream.prototype = new $h_O();
+$c_Ljava_io_OutputStream.prototype.constructor = $c_Ljava_io_OutputStream;
 /** @constructor */
-function $h_sr_IntRef() {
+function $h_Ljava_io_OutputStream() {
   /*<skip>*/
 }
-$h_sr_IntRef.prototype = $c_sr_IntRef.prototype;
-$c_sr_IntRef.prototype.toString__T = (function() {
-  var value = this.elem$1;
-  return ("" + value)
-});
-$c_sr_IntRef.prototype.init___I = (function(elem) {
-  this.elem$1 = elem;
-  return this
-});
-var $d_sr_IntRef = new $TypeData().initClass({
-  sr_IntRef: 0
-}, false, "scala.runtime.IntRef", {
-  sr_IntRef: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_sr_IntRef.prototype.$classData = $d_sr_IntRef;
+$h_Ljava_io_OutputStream.prototype = $c_Ljava_io_OutputStream.prototype;
 var $d_jl_Boolean = new $TypeData().initClass({
   jl_Boolean: 0
 }, false, "java.lang.Boolean", {
@@ -2018,38 +1795,6 @@ var $d_jl_Boolean = new $TypeData().initClass({
 }, (void 0), (void 0), (function(x) {
   return ((typeof x) === "boolean")
 }));
-/** @constructor */
-function $c_jl_Character() {
-  $c_O.call(this);
-  this.value$1 = 0
-}
-$c_jl_Character.prototype = new $h_O();
-$c_jl_Character.prototype.constructor = $c_jl_Character;
-/** @constructor */
-function $h_jl_Character() {
-  /*<skip>*/
-}
-$h_jl_Character.prototype = $c_jl_Character.prototype;
-$c_jl_Character.prototype.toString__T = (function() {
-  var c = this.value$1;
-  return $as_T($g.String.fromCharCode(c))
-});
-$c_jl_Character.prototype.init___C = (function(value) {
-  this.value$1 = value;
-  return this
-});
-$c_jl_Character.prototype.hashCode__I = (function() {
-  return this.value$1
-});
-var $d_jl_Character = new $TypeData().initClass({
-  jl_Character: 0
-}, false, "java.lang.Character", {
-  jl_Character: 1,
-  O: 1,
-  Ljava_io_Serializable: 1,
-  jl_Comparable: 1
-});
-$c_jl_Character.prototype.$classData = $d_jl_Character;
 /** @constructor */
 function $c_jl_Double$() {
   $c_O.call(this);
@@ -2121,116 +1866,42 @@ function $h_jl_Exception() {
 }
 $h_jl_Exception.prototype = $c_jl_Exception.prototype;
 /** @constructor */
-function $c_ju_Random$() {
-  $c_O.call(this)
+function $c_s_Console$() {
+  $c_s_DeprecatedConsole.call(this);
+  this.outVar$2 = null;
+  this.errVar$2 = null;
+  this.inVar$2 = null
 }
-$c_ju_Random$.prototype = new $h_O();
-$c_ju_Random$.prototype.constructor = $c_ju_Random$;
+$c_s_Console$.prototype = new $h_s_DeprecatedConsole();
+$c_s_Console$.prototype.constructor = $c_s_Console$;
 /** @constructor */
-function $h_ju_Random$() {
+function $h_s_Console$() {
   /*<skip>*/
 }
-$h_ju_Random$.prototype = $c_ju_Random$.prototype;
-$c_ju_Random$.prototype.init___ = (function() {
+$h_s_Console$.prototype = $c_s_Console$.prototype;
+$c_s_Console$.prototype.init___ = (function() {
+  $n_s_Console$ = this;
+  this.outVar$2 = new $c_s_util_DynamicVariable().init___O($m_jl_System$().out$1);
+  this.errVar$2 = new $c_s_util_DynamicVariable().init___O($m_jl_System$().err$1);
+  this.inVar$2 = new $c_s_util_DynamicVariable().init___O(null);
   return this
 });
-$c_ju_Random$.prototype.java$util$Random$$randomSeed__J = (function() {
-  var value = this.randomInt__p1__I();
-  var value$1 = this.randomInt__p1__I();
-  return new $c_sjsr_RuntimeLong().init___I__I(value$1, value)
-});
-$c_ju_Random$.prototype.randomInt__p1__I = (function() {
-  var a = (4.294967296E9 * $uD($g.Math.random()));
-  return $doubleToInt(((-2.147483648E9) + $uD($g.Math.floor(a))))
-});
-var $d_ju_Random$ = new $TypeData().initClass({
-  ju_Random$: 0
-}, false, "java.util.Random$", {
-  ju_Random$: 1,
+var $d_s_Console$ = new $TypeData().initClass({
+  s_Console$: 0
+}, false, "scala.Console$", {
+  s_Console$: 1,
+  s_DeprecatedConsole: 1,
   O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
+  s_io_AnsiColor: 1
 });
-$c_ju_Random$.prototype.$classData = $d_ju_Random$;
-var $n_ju_Random$ = (void 0);
-function $m_ju_Random$() {
-  if ((!$n_ju_Random$)) {
-    $n_ju_Random$ = new $c_ju_Random$().init___()
+$c_s_Console$.prototype.$classData = $d_s_Console$;
+var $n_s_Console$ = (void 0);
+function $m_s_Console$() {
+  if ((!$n_s_Console$)) {
+    $n_s_Console$ = new $c_s_Console$().init___()
   };
-  return $n_ju_Random$
+  return $n_s_Console$
 }
-/** @constructor */
-function $c_s_util_Random() {
-  $c_O.call(this);
-  this.self$1 = null
-}
-$c_s_util_Random.prototype = new $h_O();
-$c_s_util_Random.prototype.constructor = $c_s_util_Random;
-/** @constructor */
-function $h_s_util_Random() {
-  /*<skip>*/
-}
-$h_s_util_Random.prototype = $c_s_util_Random.prototype;
-$c_s_util_Random.prototype.init___ju_Random = (function(self) {
-  this.self$1 = self;
-  return this
-});
-/** @constructor */
-function $c_sjsr_AnonFunction0() {
-  $c_sr_AbstractFunction0.call(this);
-  this.f$2 = null
-}
-$c_sjsr_AnonFunction0.prototype = new $h_sr_AbstractFunction0();
-$c_sjsr_AnonFunction0.prototype.constructor = $c_sjsr_AnonFunction0;
-/** @constructor */
-function $h_sjsr_AnonFunction0() {
-  /*<skip>*/
-}
-$h_sjsr_AnonFunction0.prototype = $c_sjsr_AnonFunction0.prototype;
-$c_sjsr_AnonFunction0.prototype.apply__O = (function() {
-  return (0, this.f$2)()
-});
-$c_sjsr_AnonFunction0.prototype.init___sjs_js_Function0 = (function(f) {
-  this.f$2 = f;
-  return this
-});
-var $d_sjsr_AnonFunction0 = new $TypeData().initClass({
-  sjsr_AnonFunction0: 0
-}, false, "scala.scalajs.runtime.AnonFunction0", {
-  sjsr_AnonFunction0: 1,
-  sr_AbstractFunction0: 1,
-  O: 1,
-  F0: 1
-});
-$c_sjsr_AnonFunction0.prototype.$classData = $d_sjsr_AnonFunction0;
-/** @constructor */
-function $c_sjsr_AnonFunction1() {
-  $c_sr_AbstractFunction1.call(this);
-  this.f$2 = null
-}
-$c_sjsr_AnonFunction1.prototype = new $h_sr_AbstractFunction1();
-$c_sjsr_AnonFunction1.prototype.constructor = $c_sjsr_AnonFunction1;
-/** @constructor */
-function $h_sjsr_AnonFunction1() {
-  /*<skip>*/
-}
-$h_sjsr_AnonFunction1.prototype = $c_sjsr_AnonFunction1.prototype;
-$c_sjsr_AnonFunction1.prototype.apply__O__O = (function(arg1) {
-  return (0, this.f$2)(arg1)
-});
-$c_sjsr_AnonFunction1.prototype.init___sjs_js_Function1 = (function(f) {
-  this.f$2 = f;
-  return this
-});
-var $d_sjsr_AnonFunction1 = new $TypeData().initClass({
-  sjsr_AnonFunction1: 0
-}, false, "scala.scalajs.runtime.AnonFunction1", {
-  sjsr_AnonFunction1: 1,
-  sr_AbstractFunction1: 1,
-  O: 1,
-  F1: 1
-});
-$c_sjsr_AnonFunction1.prototype.$classData = $d_sjsr_AnonFunction1;
 /** @constructor */
 function $c_sjsr_RuntimeLong$() {
   $c_O.call(this);
@@ -2546,6 +2217,22 @@ function $m_sjsr_RuntimeLong$() {
   };
   return $n_sjsr_RuntimeLong$
 }
+/** @constructor */
+function $c_Ljava_io_FilterOutputStream() {
+  $c_Ljava_io_OutputStream.call(this);
+  this.out$2 = null
+}
+$c_Ljava_io_FilterOutputStream.prototype = new $h_Ljava_io_OutputStream();
+$c_Ljava_io_FilterOutputStream.prototype.constructor = $c_Ljava_io_FilterOutputStream;
+/** @constructor */
+function $h_Ljava_io_FilterOutputStream() {
+  /*<skip>*/
+}
+$h_Ljava_io_FilterOutputStream.prototype = $c_Ljava_io_FilterOutputStream.prototype;
+$c_Ljava_io_FilterOutputStream.prototype.init___Ljava_io_OutputStream = (function(out) {
+  this.out$2 = out;
+  return this
+});
 function $is_T(obj) {
   return ((typeof obj) === "string")
 }
@@ -2642,6 +2329,30 @@ var $d_jl_Integer = new $TypeData().initClass({
 }, (void 0), (void 0), (function(x) {
   return $isInt(x)
 }));
+/** @constructor */
+function $c_jl_JSConsoleBasedPrintStream$DummyOutputStream() {
+  $c_Ljava_io_OutputStream.call(this)
+}
+$c_jl_JSConsoleBasedPrintStream$DummyOutputStream.prototype = new $h_Ljava_io_OutputStream();
+$c_jl_JSConsoleBasedPrintStream$DummyOutputStream.prototype.constructor = $c_jl_JSConsoleBasedPrintStream$DummyOutputStream;
+/** @constructor */
+function $h_jl_JSConsoleBasedPrintStream$DummyOutputStream() {
+  /*<skip>*/
+}
+$h_jl_JSConsoleBasedPrintStream$DummyOutputStream.prototype = $c_jl_JSConsoleBasedPrintStream$DummyOutputStream.prototype;
+$c_jl_JSConsoleBasedPrintStream$DummyOutputStream.prototype.init___ = (function() {
+  return this
+});
+var $d_jl_JSConsoleBasedPrintStream$DummyOutputStream = new $TypeData().initClass({
+  jl_JSConsoleBasedPrintStream$DummyOutputStream: 0
+}, false, "java.lang.JSConsoleBasedPrintStream$DummyOutputStream", {
+  jl_JSConsoleBasedPrintStream$DummyOutputStream: 1,
+  Ljava_io_OutputStream: 1,
+  O: 1,
+  Ljava_io_Closeable: 1,
+  Ljava_io_Flushable: 1
+});
+$c_jl_JSConsoleBasedPrintStream$DummyOutputStream.prototype.$classData = $d_jl_JSConsoleBasedPrintStream$DummyOutputStream;
 function $isArrayOf_jl_Long(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Long)))
 }
@@ -2681,92 +2392,6 @@ var $d_jl_Short = new $TypeData().initClass({
 }, (void 0), (void 0), (function(x) {
   return $isShort(x)
 }));
-/** @constructor */
-function $c_jl_StringBuilder() {
-  $c_O.call(this);
-  this.content$1 = null
-}
-$c_jl_StringBuilder.prototype = new $h_O();
-$c_jl_StringBuilder.prototype.constructor = $c_jl_StringBuilder;
-/** @constructor */
-function $h_jl_StringBuilder() {
-  /*<skip>*/
-}
-$h_jl_StringBuilder.prototype = $c_jl_StringBuilder.prototype;
-$c_jl_StringBuilder.prototype.append__T__jl_StringBuilder = (function(s) {
-  this.content$1 = (("" + this.content$1) + ((s === null) ? "null" : s));
-  return this
-});
-$c_jl_StringBuilder.prototype.toString__T = (function() {
-  return this.content$1
-});
-$c_jl_StringBuilder.prototype.init___I = (function(initialCapacity) {
-  $c_jl_StringBuilder.prototype.init___T.call(this, "");
-  return this
-});
-$c_jl_StringBuilder.prototype.init___T = (function(content) {
-  this.content$1 = content;
-  return this
-});
-var $d_jl_StringBuilder = new $TypeData().initClass({
-  jl_StringBuilder: 0
-}, false, "java.lang.StringBuilder", {
-  jl_StringBuilder: 1,
-  O: 1,
-  jl_CharSequence: 1,
-  jl_Appendable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_jl_StringBuilder.prototype.$classData = $d_jl_StringBuilder;
-/** @constructor */
-function $c_s_util_Random$() {
-  $c_s_util_Random.call(this)
-}
-$c_s_util_Random$.prototype = new $h_s_util_Random();
-$c_s_util_Random$.prototype.constructor = $c_s_util_Random$;
-/** @constructor */
-function $h_s_util_Random$() {
-  /*<skip>*/
-}
-$h_s_util_Random$.prototype = $c_s_util_Random$.prototype;
-$c_s_util_Random$.prototype.init___ = (function() {
-  $c_s_util_Random.prototype.init___ju_Random.call(this, new $c_ju_Random().init___());
-  return this
-});
-var $d_s_util_Random$ = new $TypeData().initClass({
-  s_util_Random$: 0
-}, false, "scala.util.Random$", {
-  s_util_Random$: 1,
-  s_util_Random: 1,
-  O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_s_util_Random$.prototype.$classData = $d_s_util_Random$;
-var $n_s_util_Random$ = (void 0);
-function $m_s_util_Random$() {
-  if ((!$n_s_util_Random$)) {
-    $n_s_util_Random$ = new $c_s_util_Random$().init___()
-  };
-  return $n_s_util_Random$
-}
-/** @constructor */
-function $c_sc_AbstractIterator() {
-  $c_O.call(this)
-}
-$c_sc_AbstractIterator.prototype = new $h_O();
-$c_sc_AbstractIterator.prototype.constructor = $c_sc_AbstractIterator;
-/** @constructor */
-function $h_sc_AbstractIterator() {
-  /*<skip>*/
-}
-$h_sc_AbstractIterator.prototype = $c_sc_AbstractIterator.prototype;
-$c_sc_AbstractIterator.prototype.toString__T = (function() {
-  return $f_sc_Iterator__toString__T(this)
-});
-$c_sc_AbstractIterator.prototype.foreach__F1__V = (function(f) {
-  $f_sc_Iterator__foreach__F1__V(this, f)
-});
 /** @constructor */
 function $c_sjsr_RuntimeLong() {
   $c_jl_Number.call(this);
@@ -3004,32 +2629,6 @@ var $d_jl_ClassCastException = new $TypeData().initClass({
 });
 $c_jl_ClassCastException.prototype.$classData = $d_jl_ClassCastException;
 /** @constructor */
-function $c_jl_IllegalArgumentException() {
-  $c_jl_RuntimeException.call(this)
-}
-$c_jl_IllegalArgumentException.prototype = new $h_jl_RuntimeException();
-$c_jl_IllegalArgumentException.prototype.constructor = $c_jl_IllegalArgumentException;
-/** @constructor */
-function $h_jl_IllegalArgumentException() {
-  /*<skip>*/
-}
-$h_jl_IllegalArgumentException.prototype = $c_jl_IllegalArgumentException.prototype;
-$c_jl_IllegalArgumentException.prototype.init___T = (function(s) {
-  $c_jl_Throwable.prototype.init___T__jl_Throwable.call(this, s, null);
-  return this
-});
-var $d_jl_IllegalArgumentException = new $TypeData().initClass({
-  jl_IllegalArgumentException: 0
-}, false, "java.lang.IllegalArgumentException", {
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_jl_IllegalArgumentException.prototype.$classData = $d_jl_IllegalArgumentException;
-/** @constructor */
 function $c_jl_IndexOutOfBoundsException() {
   $c_jl_RuntimeException.call(this)
 }
@@ -3056,91 +2655,44 @@ var $d_jl_IndexOutOfBoundsException = new $TypeData().initClass({
 });
 $c_jl_IndexOutOfBoundsException.prototype.$classData = $d_jl_IndexOutOfBoundsException;
 /** @constructor */
-function $c_jl_NullPointerException() {
-  $c_jl_RuntimeException.call(this)
+function $c_Ljava_io_PrintStream() {
+  $c_Ljava_io_FilterOutputStream.call(this);
+  this.encoder$3 = null;
+  this.autoFlush$3 = false;
+  this.charset$3 = null;
+  this.closing$3 = false;
+  this.java$io$PrintStream$$closed$3 = false;
+  this.errorFlag$3 = false;
+  this.bitmap$0$3 = false
 }
-$c_jl_NullPointerException.prototype = new $h_jl_RuntimeException();
-$c_jl_NullPointerException.prototype.constructor = $c_jl_NullPointerException;
+$c_Ljava_io_PrintStream.prototype = new $h_Ljava_io_FilterOutputStream();
+$c_Ljava_io_PrintStream.prototype.constructor = $c_Ljava_io_PrintStream;
 /** @constructor */
-function $h_jl_NullPointerException() {
+function $h_Ljava_io_PrintStream() {
   /*<skip>*/
 }
-$h_jl_NullPointerException.prototype = $c_jl_NullPointerException.prototype;
-$c_jl_NullPointerException.prototype.init___ = (function() {
-  $c_jl_Throwable.prototype.init___T__jl_Throwable.call(this, null, null);
+$h_Ljava_io_PrintStream.prototype = $c_Ljava_io_PrintStream.prototype;
+$c_Ljava_io_PrintStream.prototype.init___Ljava_io_OutputStream__Z__Ljava_nio_charset_Charset = (function(_out, autoFlush, charset) {
+  this.autoFlush$3 = autoFlush;
+  this.charset$3 = charset;
+  $c_Ljava_io_FilterOutputStream.prototype.init___Ljava_io_OutputStream.call(this, _out);
+  this.closing$3 = false;
+  this.java$io$PrintStream$$closed$3 = false;
+  this.errorFlag$3 = false;
   return this
 });
-var $d_jl_NullPointerException = new $TypeData().initClass({
-  jl_NullPointerException: 0
-}, false, "java.lang.NullPointerException", {
-  jl_NullPointerException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_jl_NullPointerException.prototype.$classData = $d_jl_NullPointerException;
-/** @constructor */
-function $c_ju_NoSuchElementException() {
-  $c_jl_RuntimeException.call(this)
+function $is_Ljava_io_PrintStream(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljava_io_PrintStream)))
 }
-$c_ju_NoSuchElementException.prototype = new $h_jl_RuntimeException();
-$c_ju_NoSuchElementException.prototype.constructor = $c_ju_NoSuchElementException;
-/** @constructor */
-function $h_ju_NoSuchElementException() {
-  /*<skip>*/
+function $as_Ljava_io_PrintStream(obj) {
+  return (($is_Ljava_io_PrintStream(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.PrintStream"))
 }
-$h_ju_NoSuchElementException.prototype = $c_ju_NoSuchElementException.prototype;
-$c_ju_NoSuchElementException.prototype.init___T = (function(s) {
-  $c_jl_Throwable.prototype.init___T__jl_Throwable.call(this, s, null);
-  return this
-});
-var $d_ju_NoSuchElementException = new $TypeData().initClass({
-  ju_NoSuchElementException: 0
-}, false, "java.util.NoSuchElementException", {
-  ju_NoSuchElementException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_NoSuchElementException.prototype.$classData = $d_ju_NoSuchElementException;
-/** @constructor */
-function $c_sc_Iterator$$anon$2() {
-  $c_sc_AbstractIterator.call(this)
+function $isArrayOf_Ljava_io_PrintStream(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_io_PrintStream)))
 }
-$c_sc_Iterator$$anon$2.prototype = new $h_sc_AbstractIterator();
-$c_sc_Iterator$$anon$2.prototype.constructor = $c_sc_Iterator$$anon$2;
-/** @constructor */
-function $h_sc_Iterator$$anon$2() {
-  /*<skip>*/
+function $asArrayOf_Ljava_io_PrintStream(obj, depth) {
+  return (($isArrayOf_Ljava_io_PrintStream(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.PrintStream;", depth))
 }
-$h_sc_Iterator$$anon$2.prototype = $c_sc_Iterator$$anon$2.prototype;
-$c_sc_Iterator$$anon$2.prototype.init___ = (function() {
-  return this
-});
-$c_sc_Iterator$$anon$2.prototype.next__O = (function() {
-  this.next__sr_Nothing$()
-});
-$c_sc_Iterator$$anon$2.prototype.next__sr_Nothing$ = (function() {
-  throw new $c_ju_NoSuchElementException().init___T("next on empty iterator")
-});
-$c_sc_Iterator$$anon$2.prototype.hasNext__Z = (function() {
-  return false
-});
-var $d_sc_Iterator$$anon$2 = new $TypeData().initClass({
-  sc_Iterator$$anon$2: 0
-}, false, "scala.collection.Iterator$$anon$2", {
-  sc_Iterator$$anon$2: 1,
-  sc_AbstractIterator: 1,
-  O: 1,
-  sc_Iterator: 1,
-  sc_TraversableOnce: 1,
-  sc_GenTraversableOnce: 1
-});
-$c_sc_Iterator$$anon$2.prototype.$classData = $d_sc_Iterator$$anon$2;
 /** @constructor */
 function $c_jl_ArrayIndexOutOfBoundsException() {
   $c_jl_IndexOutOfBoundsException.call(this)
@@ -3168,122 +2720,6 @@ var $d_jl_ArrayIndexOutOfBoundsException = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_jl_ArrayIndexOutOfBoundsException.prototype.$classData = $d_jl_ArrayIndexOutOfBoundsException;
-function $f_sc_TraversableLike__isPartLikelySynthetic$1__psc_TraversableLike__T__I__Z($thiz, fqn$1, partStart$1) {
-  var firstChar = (65535 & $uI(fqn$1.charCodeAt(partStart$1)));
-  return (((firstChar > 90) && (firstChar < 127)) || (firstChar < 65))
-}
-function $f_sc_TraversableLike__toString__T($thiz) {
-  var start = ($thiz.stringPrefix__T() + "(");
-  return $f_sc_TraversableOnce__mkString__T__T__T__T($thiz, start, ", ", ")")
-}
-function $f_sc_TraversableLike__stringPrefix__T($thiz) {
-  var this$1 = $thiz.repr__O();
-  var fqn = $objectGetClass(this$1).getName__T();
-  var pos = (((-1) + $uI(fqn.length)) | 0);
-  while (true) {
-    if ((pos !== (-1))) {
-      var index = pos;
-      var jsx$1 = ((65535 & $uI(fqn.charCodeAt(index))) === 36)
-    } else {
-      var jsx$1 = false
-    };
-    if (jsx$1) {
-      pos = (((-1) + pos) | 0)
-    } else {
-      break
-    }
-  };
-  if ((pos === (-1))) {
-    var jsx$2 = true
-  } else {
-    var index$1 = pos;
-    var jsx$2 = ((65535 & $uI(fqn.charCodeAt(index$1))) === 46)
-  };
-  if (jsx$2) {
-    return ""
-  };
-  var result = "";
-  while (true) {
-    var partEnd = ((1 + pos) | 0);
-    while (true) {
-      if ((pos !== (-1))) {
-        var index$2 = pos;
-        var jsx$4 = ((65535 & $uI(fqn.charCodeAt(index$2))) <= 57)
-      } else {
-        var jsx$4 = false
-      };
-      if (jsx$4) {
-        var index$3 = pos;
-        var jsx$3 = ((65535 & $uI(fqn.charCodeAt(index$3))) >= 48)
-      } else {
-        var jsx$3 = false
-      };
-      if (jsx$3) {
-        pos = (((-1) + pos) | 0)
-      } else {
-        break
-      }
-    };
-    var lastNonDigit = pos;
-    while (true) {
-      if ((pos !== (-1))) {
-        var index$4 = pos;
-        var jsx$6 = ((65535 & $uI(fqn.charCodeAt(index$4))) !== 36)
-      } else {
-        var jsx$6 = false
-      };
-      if (jsx$6) {
-        var index$5 = pos;
-        var jsx$5 = ((65535 & $uI(fqn.charCodeAt(index$5))) !== 46)
-      } else {
-        var jsx$5 = false
-      };
-      if (jsx$5) {
-        pos = (((-1) + pos) | 0)
-      } else {
-        break
-      }
-    };
-    var partStart = ((1 + pos) | 0);
-    if (((pos === lastNonDigit) && (partEnd !== $uI(fqn.length)))) {
-      return result
-    };
-    while (true) {
-      if ((pos !== (-1))) {
-        var index$6 = pos;
-        var jsx$7 = ((65535 & $uI(fqn.charCodeAt(index$6))) === 36)
-      } else {
-        var jsx$7 = false
-      };
-      if (jsx$7) {
-        pos = (((-1) + pos) | 0)
-      } else {
-        break
-      }
-    };
-    if ((pos === (-1))) {
-      var atEnd = true
-    } else {
-      var index$7 = pos;
-      var atEnd = ((65535 & $uI(fqn.charCodeAt(index$7))) === 46)
-    };
-    if ((atEnd || (!$f_sc_TraversableLike__isPartLikelySynthetic$1__psc_TraversableLike__T__I__Z($thiz, fqn, partStart)))) {
-      var part = $as_T(fqn.substring(partStart, partEnd));
-      var thiz = result;
-      if ((thiz === null)) {
-        throw new $c_jl_NullPointerException().init___()
-      };
-      if ((thiz === "")) {
-        result = part
-      } else {
-        result = ((("" + part) + new $c_jl_Character().init___C(46)) + result)
-      };
-      if (atEnd) {
-        return result
-      }
-    }
-  }
-}
 /** @constructor */
 function $c_sjsr_UndefinedBehaviorError() {
   $c_jl_Error.call(this)
@@ -3319,54 +2755,78 @@ var $d_sjsr_UndefinedBehaviorError = new $TypeData().initClass({
 });
 $c_sjsr_UndefinedBehaviorError.prototype.$classData = $d_sjsr_UndefinedBehaviorError;
 /** @constructor */
-function $c_sc_IndexedSeqLike$Elements() {
-  $c_sc_AbstractIterator.call(this);
-  this.end$2 = 0;
-  this.index$2 = 0;
-  this.$$outer$2 = null
+function $c_jl_JSConsoleBasedPrintStream() {
+  $c_Ljava_io_PrintStream.call(this);
+  this.isErr$4 = null;
+  this.flushed$4 = false;
+  this.buffer$4 = null
 }
-$c_sc_IndexedSeqLike$Elements.prototype = new $h_sc_AbstractIterator();
-$c_sc_IndexedSeqLike$Elements.prototype.constructor = $c_sc_IndexedSeqLike$Elements;
+$c_jl_JSConsoleBasedPrintStream.prototype = new $h_Ljava_io_PrintStream();
+$c_jl_JSConsoleBasedPrintStream.prototype.constructor = $c_jl_JSConsoleBasedPrintStream;
 /** @constructor */
-function $h_sc_IndexedSeqLike$Elements() {
+function $h_jl_JSConsoleBasedPrintStream() {
   /*<skip>*/
 }
-$h_sc_IndexedSeqLike$Elements.prototype = $c_sc_IndexedSeqLike$Elements.prototype;
-$c_sc_IndexedSeqLike$Elements.prototype.next__O = (function() {
-  if ((this.index$2 >= this.end$2)) {
-    $m_sc_Iterator$().empty$1.next__O()
-  };
-  var x = this.$$outer$2.apply__I__O(this.index$2);
-  this.index$2 = ((1 + this.index$2) | 0);
-  return x
-});
-$c_sc_IndexedSeqLike$Elements.prototype.init___sc_IndexedSeqLike__I__I = (function($$outer, start, end) {
-  this.end$2 = end;
-  if (($$outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.$$outer$2 = $$outer
-  };
-  this.index$2 = start;
+$h_jl_JSConsoleBasedPrintStream.prototype = $c_jl_JSConsoleBasedPrintStream.prototype;
+$c_jl_JSConsoleBasedPrintStream.prototype.init___jl_Boolean = (function(isErr) {
+  this.isErr$4 = isErr;
+  var out = new $c_jl_JSConsoleBasedPrintStream$DummyOutputStream().init___();
+  $c_Ljava_io_PrintStream.prototype.init___Ljava_io_OutputStream__Z__Ljava_nio_charset_Charset.call(this, out, false, null);
+  this.flushed$4 = true;
+  this.buffer$4 = "";
   return this
 });
-$c_sc_IndexedSeqLike$Elements.prototype.hasNext__Z = (function() {
-  return (this.index$2 < this.end$2)
+$c_jl_JSConsoleBasedPrintStream.prototype.java$lang$JSConsoleBasedPrintStream$$printString__T__V = (function(s) {
+  var rest = s;
+  while ((rest !== "")) {
+    var thiz = rest;
+    var nlPos = $uI(thiz.indexOf("\n"));
+    if ((nlPos < 0)) {
+      this.buffer$4 = (("" + this.buffer$4) + rest);
+      this.flushed$4 = false;
+      rest = ""
+    } else {
+      var jsx$1 = this.buffer$4;
+      var thiz$1 = rest;
+      this.doWriteLine__p4__T__V((("" + jsx$1) + $as_T(thiz$1.substring(0, nlPos))));
+      this.buffer$4 = "";
+      this.flushed$4 = true;
+      var thiz$2 = rest;
+      var beginIndex = ((1 + nlPos) | 0);
+      rest = $as_T(thiz$2.substring(beginIndex))
+    }
+  }
 });
-var $d_sc_IndexedSeqLike$Elements = new $TypeData().initClass({
-  sc_IndexedSeqLike$Elements: 0
-}, false, "scala.collection.IndexedSeqLike$Elements", {
-  sc_IndexedSeqLike$Elements: 1,
-  sc_AbstractIterator: 1,
+$c_jl_JSConsoleBasedPrintStream.prototype.doWriteLine__p4__T__V = (function(line) {
+  var x = $g.console;
+  if ($uZ((!(!x)))) {
+    var x$1 = this.isErr$4;
+    if ($uZ(x$1)) {
+      var x$2 = $g.console.error;
+      var jsx$1 = $uZ((!(!x$2)))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      $g.console.error(line)
+    } else {
+      $g.console.log(line)
+    }
+  }
+});
+var $d_jl_JSConsoleBasedPrintStream = new $TypeData().initClass({
+  jl_JSConsoleBasedPrintStream: 0
+}, false, "java.lang.JSConsoleBasedPrintStream", {
+  jl_JSConsoleBasedPrintStream: 1,
+  Ljava_io_PrintStream: 1,
+  Ljava_io_FilterOutputStream: 1,
+  Ljava_io_OutputStream: 1,
   O: 1,
-  sc_Iterator: 1,
-  sc_TraversableOnce: 1,
-  sc_GenTraversableOnce: 1,
-  sc_BufferedIterator: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
+  Ljava_io_Closeable: 1,
+  Ljava_io_Flushable: 1,
+  jl_Appendable: 1
 });
-$c_sc_IndexedSeqLike$Elements.prototype.$classData = $d_sc_IndexedSeqLike$Elements;
+$c_jl_JSConsoleBasedPrintStream.prototype.$classData = $d_jl_JSConsoleBasedPrintStream;
 /** @constructor */
 function $c_sjs_js_JavaScriptException() {
   $c_jl_RuntimeException.call(this);
@@ -3439,296 +2899,6 @@ var $d_sjs_js_JavaScriptException = new $TypeData().initClass({
   s_Serializable: 1
 });
 $c_sjs_js_JavaScriptException.prototype.$classData = $d_sjs_js_JavaScriptException;
-/** @constructor */
-function $c_sc_AbstractTraversable() {
-  $c_O.call(this)
-}
-$c_sc_AbstractTraversable.prototype = new $h_O();
-$c_sc_AbstractTraversable.prototype.constructor = $c_sc_AbstractTraversable;
-/** @constructor */
-function $h_sc_AbstractTraversable() {
-  /*<skip>*/
-}
-$h_sc_AbstractTraversable.prototype = $c_sc_AbstractTraversable.prototype;
-$c_sc_AbstractTraversable.prototype.repr__O = (function() {
-  return this
-});
-$c_sc_AbstractTraversable.prototype.stringPrefix__T = (function() {
-  return $f_sc_TraversableLike__stringPrefix__T(this)
-});
-function $f_sc_IndexedSeqOptimized__foreach__F1__V($thiz, f) {
-  var i = 0;
-  var len = $thiz.length__I();
-  while ((i < len)) {
-    f.apply__O__O($thiz.apply__I__O(i));
-    i = ((1 + i) | 0)
-  }
-}
-/** @constructor */
-function $c_sc_AbstractIterable() {
-  $c_sc_AbstractTraversable.call(this)
-}
-$c_sc_AbstractIterable.prototype = new $h_sc_AbstractTraversable();
-$c_sc_AbstractIterable.prototype.constructor = $c_sc_AbstractIterable;
-/** @constructor */
-function $h_sc_AbstractIterable() {
-  /*<skip>*/
-}
-$h_sc_AbstractIterable.prototype = $c_sc_AbstractIterable.prototype;
-/** @constructor */
-function $c_sc_AbstractSeq() {
-  $c_sc_AbstractIterable.call(this)
-}
-$c_sc_AbstractSeq.prototype = new $h_sc_AbstractIterable();
-$c_sc_AbstractSeq.prototype.constructor = $c_sc_AbstractSeq;
-/** @constructor */
-function $h_sc_AbstractSeq() {
-  /*<skip>*/
-}
-$h_sc_AbstractSeq.prototype = $c_sc_AbstractSeq.prototype;
-$c_sc_AbstractSeq.prototype.toString__T = (function() {
-  return $f_sc_TraversableLike__toString__T(this)
-});
-/** @constructor */
-function $c_scm_AbstractSeq() {
-  $c_sc_AbstractSeq.call(this)
-}
-$c_scm_AbstractSeq.prototype = new $h_sc_AbstractSeq();
-$c_scm_AbstractSeq.prototype.constructor = $c_scm_AbstractSeq;
-/** @constructor */
-function $h_scm_AbstractSeq() {
-  /*<skip>*/
-}
-$h_scm_AbstractSeq.prototype = $c_scm_AbstractSeq.prototype;
-function $is_sci_List(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.sci_List)))
-}
-function $as_sci_List(obj) {
-  return (($is_sci_List(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.immutable.List"))
-}
-function $isArrayOf_sci_List(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.sci_List)))
-}
-function $asArrayOf_sci_List(obj, depth) {
-  return (($isArrayOf_sci_List(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.immutable.List;", depth))
-}
-/** @constructor */
-function $c_scm_AbstractBuffer() {
-  $c_scm_AbstractSeq.call(this)
-}
-$c_scm_AbstractBuffer.prototype = new $h_scm_AbstractSeq();
-$c_scm_AbstractBuffer.prototype.constructor = $c_scm_AbstractBuffer;
-/** @constructor */
-function $h_scm_AbstractBuffer() {
-  /*<skip>*/
-}
-$h_scm_AbstractBuffer.prototype = $c_scm_AbstractBuffer.prototype;
-/** @constructor */
-function $c_scm_StringBuilder() {
-  $c_scm_AbstractSeq.call(this);
-  this.underlying$5 = null
-}
-$c_scm_StringBuilder.prototype = new $h_scm_AbstractSeq();
-$c_scm_StringBuilder.prototype.constructor = $c_scm_StringBuilder;
-/** @constructor */
-function $h_scm_StringBuilder() {
-  /*<skip>*/
-}
-$h_scm_StringBuilder.prototype = $c_scm_StringBuilder.prototype;
-$c_scm_StringBuilder.prototype.init___ = (function() {
-  $c_scm_StringBuilder.prototype.init___I__T.call(this, 16, "");
-  return this
-});
-$c_scm_StringBuilder.prototype.apply__I__O = (function(idx) {
-  var this$1 = this.underlying$5;
-  var thiz = this$1.content$1;
-  var c = (65535 & $uI(thiz.charCodeAt(idx)));
-  return new $c_jl_Character().init___C(c)
-});
-$c_scm_StringBuilder.prototype.apply__O__O = (function(v1) {
-  var index = $uI(v1);
-  var this$1 = this.underlying$5;
-  var thiz = this$1.content$1;
-  var c = (65535 & $uI(thiz.charCodeAt(index)));
-  return new $c_jl_Character().init___C(c)
-});
-$c_scm_StringBuilder.prototype.toString__T = (function() {
-  var this$1 = this.underlying$5;
-  return this$1.content$1
-});
-$c_scm_StringBuilder.prototype.foreach__F1__V = (function(f) {
-  $f_sc_IndexedSeqOptimized__foreach__F1__V(this, f)
-});
-$c_scm_StringBuilder.prototype.append__T__scm_StringBuilder = (function(s) {
-  this.underlying$5.append__T__jl_StringBuilder(s);
-  return this
-});
-$c_scm_StringBuilder.prototype.init___I__T = (function(initCapacity, initValue) {
-  $c_scm_StringBuilder.prototype.init___jl_StringBuilder.call(this, new $c_jl_StringBuilder().init___I((($uI(initValue.length) + initCapacity) | 0)).append__T__jl_StringBuilder(initValue));
-  return this
-});
-$c_scm_StringBuilder.prototype.length__I = (function() {
-  var this$1 = this.underlying$5;
-  var thiz = this$1.content$1;
-  return $uI(thiz.length)
-});
-$c_scm_StringBuilder.prototype.init___jl_StringBuilder = (function(underlying) {
-  this.underlying$5 = underlying;
-  return this
-});
-$c_scm_StringBuilder.prototype.append__O__scm_StringBuilder = (function(x) {
-  this.underlying$5.append__T__jl_StringBuilder($m_sjsr_RuntimeString$().valueOf__O__T(x));
-  return this
-});
-$c_scm_StringBuilder.prototype.hashCode__I = (function() {
-  return $m_s_util_hashing_MurmurHash3$().seqHash__sc_Seq__I(this)
-});
-var $d_scm_StringBuilder = new $TypeData().initClass({
-  scm_StringBuilder: 0
-}, false, "scala.collection.mutable.StringBuilder", {
-  scm_StringBuilder: 1,
-  scm_AbstractSeq: 1,
-  sc_AbstractSeq: 1,
-  sc_AbstractIterable: 1,
-  sc_AbstractTraversable: 1,
-  O: 1,
-  sc_Traversable: 1,
-  sc_TraversableLike: 1,
-  scg_HasNewBuilder: 1,
-  scg_FilterMonadic: 1,
-  sc_TraversableOnce: 1,
-  sc_GenTraversableOnce: 1,
-  sc_GenTraversableLike: 1,
-  sc_Parallelizable: 1,
-  sc_GenTraversable: 1,
-  scg_GenericTraversableTemplate: 1,
-  sc_Iterable: 1,
-  sc_GenIterable: 1,
-  sc_GenIterableLike: 1,
-  sc_IterableLike: 1,
-  s_Equals: 1,
-  sc_Seq: 1,
-  s_PartialFunction: 1,
-  F1: 1,
-  sc_GenSeq: 1,
-  sc_GenSeqLike: 1,
-  sc_SeqLike: 1,
-  scm_Seq: 1,
-  scm_Iterable: 1,
-  scm_Traversable: 1,
-  s_Mutable: 1,
-  scm_SeqLike: 1,
-  scm_Cloneable: 1,
-  s_Cloneable: 1,
-  jl_Cloneable: 1,
-  jl_CharSequence: 1,
-  scm_IndexedSeq: 1,
-  sc_IndexedSeq: 1,
-  sc_IndexedSeqLike: 1,
-  scm_IndexedSeqLike: 1,
-  sci_StringLike: 1,
-  sc_IndexedSeqOptimized: 1,
-  s_math_Ordered: 1,
-  jl_Comparable: 1,
-  scm_ReusableBuilder: 1,
-  scm_Builder: 1,
-  scg_Growable: 1,
-  scg_Clearable: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_scm_StringBuilder.prototype.$classData = $d_scm_StringBuilder;
-/** @constructor */
-function $c_sjs_js_WrappedArray() {
-  $c_scm_AbstractBuffer.call(this);
-  this.array$6 = null
-}
-$c_sjs_js_WrappedArray.prototype = new $h_scm_AbstractBuffer();
-$c_sjs_js_WrappedArray.prototype.constructor = $c_sjs_js_WrappedArray;
-/** @constructor */
-function $h_sjs_js_WrappedArray() {
-  /*<skip>*/
-}
-$h_sjs_js_WrappedArray.prototype = $c_sjs_js_WrappedArray.prototype;
-$c_sjs_js_WrappedArray.prototype.apply__I__O = (function(index) {
-  return this.array$6[index]
-});
-$c_sjs_js_WrappedArray.prototype.apply__O__O = (function(v1) {
-  var index = $uI(v1);
-  return this.array$6[index]
-});
-$c_sjs_js_WrappedArray.prototype.foreach__F1__V = (function(f) {
-  $f_sc_IndexedSeqOptimized__foreach__F1__V(this, f)
-});
-$c_sjs_js_WrappedArray.prototype.length__I = (function() {
-  return $uI(this.array$6.length)
-});
-$c_sjs_js_WrappedArray.prototype.hashCode__I = (function() {
-  return $m_s_util_hashing_MurmurHash3$().seqHash__sc_Seq__I(this)
-});
-$c_sjs_js_WrappedArray.prototype.init___sjs_js_Array = (function(array) {
-  this.array$6 = array;
-  return this
-});
-$c_sjs_js_WrappedArray.prototype.stringPrefix__T = (function() {
-  return "WrappedArray"
-});
-var $d_sjs_js_WrappedArray = new $TypeData().initClass({
-  sjs_js_WrappedArray: 0
-}, false, "scala.scalajs.js.WrappedArray", {
-  sjs_js_WrappedArray: 1,
-  scm_AbstractBuffer: 1,
-  scm_AbstractSeq: 1,
-  sc_AbstractSeq: 1,
-  sc_AbstractIterable: 1,
-  sc_AbstractTraversable: 1,
-  O: 1,
-  sc_Traversable: 1,
-  sc_TraversableLike: 1,
-  scg_HasNewBuilder: 1,
-  scg_FilterMonadic: 1,
-  sc_TraversableOnce: 1,
-  sc_GenTraversableOnce: 1,
-  sc_GenTraversableLike: 1,
-  sc_Parallelizable: 1,
-  sc_GenTraversable: 1,
-  scg_GenericTraversableTemplate: 1,
-  sc_Iterable: 1,
-  sc_GenIterable: 1,
-  sc_GenIterableLike: 1,
-  sc_IterableLike: 1,
-  s_Equals: 1,
-  sc_Seq: 1,
-  s_PartialFunction: 1,
-  F1: 1,
-  sc_GenSeq: 1,
-  sc_GenSeqLike: 1,
-  sc_SeqLike: 1,
-  scm_Seq: 1,
-  scm_Iterable: 1,
-  scm_Traversable: 1,
-  s_Mutable: 1,
-  scm_SeqLike: 1,
-  scm_Cloneable: 1,
-  s_Cloneable: 1,
-  jl_Cloneable: 1,
-  scm_Buffer: 1,
-  scm_BufferLike: 1,
-  scg_Growable: 1,
-  scg_Clearable: 1,
-  scg_Shrinkable: 1,
-  sc_script_Scriptable: 1,
-  scg_Subtractable: 1,
-  scm_IndexedSeq: 1,
-  sc_IndexedSeq: 1,
-  sc_IndexedSeqLike: 1,
-  scm_IndexedSeqLike: 1,
-  scm_ArrayLike: 1,
-  scm_IndexedSeqOptimized: 1,
-  sc_IndexedSeqOptimized: 1,
-  scm_Builder: 1
-});
-$c_sjs_js_WrappedArray.prototype.$classData = $d_sjs_js_WrappedArray;
 $m_Ltotoro_ocelot_Ocelot$().main__AT__V($makeNativeArrayWrapper($d_T.getArrayOf(), []));
 }).call(this);
 //# sourceMappingURL=ocelot-face-fastopt.js.map

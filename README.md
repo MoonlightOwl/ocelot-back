@@ -9,14 +9,9 @@ This repository contains Ocelot.Online backend.
 
 ## Build & Run
 
-```sh
-$ cd ocelot-back
-$ ./sbt
-> jetty:start
-> browse
-```
+Use `JettyLauncher` class to run the project. Set `./src/main/webapp/assets` as working directory.
 
-If `browse` doesn't launch your browser, manually open [http://localhost:37107/](http://localhost:37107/) in your browser.
+The server will be binded to [http://localhost:37107/](http://localhost:37107/) address.
 
 ## Deploy
 
