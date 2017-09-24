@@ -50,9 +50,9 @@ class OcelotServlet extends OcelotStack with ScalateSupport {
           </div>
         </div>
         <!-- Include JavaScript dependencies -->
-        <script type="text/javascript" src="assets/js/ocelot-face-jsdeps.js"></script>
+        <script type="text/javascript" src="assets/js/ocelot-face-jsdeps.min.js"></script>
         <!-- Include Scala.js compiled code -->
-        <script type="text/javascript" src="assets/js/ocelot-face-fastopt.js"></script>
+        <script type="text/javascript" src="assets/js/ocelot-face-opt.js"></script>
       </body>
     </html>
   }
