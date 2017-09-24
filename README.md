@@ -9,7 +9,7 @@ This repository contains Ocelot.Online backend.
 
 ## Build & Run
 
-Use `JettyLauncher` class to run the project. Set `./src/main/webapp/assets` as working directory.
+Use `JettyLauncher` class to run the project. Set `./src/main/webapp/` as working directory.
 
 The server will be binded to [http://localhost:37107/](http://localhost:37107/) address.
 
@@ -17,7 +17,7 @@ The server will be binded to [http://localhost:37107/](http://localhost:37107/) 
 
 ```sh
 $ cd ocelot-back
-$ sbt sbt universal:packageZipTarball
+$ sbt universal:packageZipTarball
 ```
 
 All files necessary to run Ocelot server will be zipped to `./target/universal/ocelot-x.x.x.tgz`

@@ -8,7 +8,7 @@ scalateSettings
 
 organization := "totoro"
 name := "ocelot"
-version := "0.1.3"
+version := "0.1.4"
 
 scalaVersion := "2.12.3"
 
@@ -47,3 +47,4 @@ mappings in Universal ++= {
     (file, relativePath) <-  (confDir.*** --- confDir) x relativeTo(confDir)
   } yield file -> s"assets/$relativePath"
 }
+mappings in Universal += baseDirectory.value / "src" / "main" / "webapp" / "favicon.ico" -> "favicon.ico"
